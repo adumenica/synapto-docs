@@ -33,16 +33,9 @@ export default async function DocPage({ params }: PageProps) {
     <DocumentationLayout categories={categories}>
       <div className="flex gap-12">
         <main className="flex-1 min-w-0">
-          <div className="mb-12">
-            <span className="text-[10px] font-bold text-[var(--accent)] uppercase tracking-widest block mb-2">
-              Documentation
-            </span>
-            <h1 className="text-4xl lg:text-5xl font-black text-white tracking-tight">
-              {doc.metadata.title}
-            </h1>
+          <div className="pt-4">
+            <Markdown content={doc.content} />
           </div>
-          
-          <Markdown content={doc.content} />
           
           <footer className="mt-24 pt-8 border-t border-white/5 text-slate-500 text-sm flex justify-between items-center">
             <span>© 2026 Synapto Operations</span>
