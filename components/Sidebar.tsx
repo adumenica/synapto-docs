@@ -1,11 +1,13 @@
 import Link from 'next/link';
-import { getSidebar } from '@/lib/docs';
+import { SidebarCategory } from '@/lib/docs';
 
-export default function Sidebar() {
-  const categories = getSidebar();
+interface SidebarProps {
+  categories: SidebarCategory[];
+}
 
+export default function Sidebar({ categories }: SidebarProps) {
   return (
-    <aside className="w-[var(--sidebar-w)] border-r border-white/5 bg-[#0a0a0b] h-screen sticky top-0 overflow-y-auto sidebar-scroll shrink-0 hidden md:block">
+    <aside className="w-full border-r border-white/5 bg-[#0a0a0b] h-full overflow-y-auto sidebar-scroll shrink-0">
       <div className="p-6 border-b border-white/5">
         <Link href="/" className="flex items-center gap-2 group">
           <div className="w-8 h-8 bg-[var(--accent)] rounded-lg flex items-center justify-center font-bold text-white group-hover:scale-110 transition-transform">

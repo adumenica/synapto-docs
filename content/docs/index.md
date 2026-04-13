@@ -22,16 +22,4 @@ Synapto always tries to resolve an incident using a pre-approved, human-validate
 
     [Architecture Overview →](for-developers/architecture-overview.md)
 
--   **API Reference**
-
-    Endpoint summary and link to the interactive Swagger UI.
-
-    [Reference →](reference/api.md)
-
--   **Configuration**
-
-    All environment variables and Docker Compose overrides.
-
-    [Configuration →](reference/configuration.md)
-
 </div>

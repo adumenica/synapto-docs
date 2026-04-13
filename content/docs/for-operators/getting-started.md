@@ -31,8 +31,6 @@ Open `.env` and set at minimum:
 | `ADMIN_DEFAULT_PASSWORD` | The password for the initial admin user |
 | `ENCRYPTION_KEY` | A 32-byte Fernet key. Generate with `python -c "from cryptography.fernet import Fernet; print(Fernet.generate_key().decode())"` |
 
-See [Configuration Reference](../reference/configuration.md) for the full variable list.
-
 ## 3. Start all services
 
 ```bash
